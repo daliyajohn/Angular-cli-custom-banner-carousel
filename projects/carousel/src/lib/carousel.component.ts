@@ -12,4 +12,12 @@ export class CarouselComponent implements OnInit {
   ngOnInit() {
   }
 
+  next() {
+    //code
+  }
+
+  preview() {
+
+  }
+
 }

@@ -1,1 +1,13 @@
-<h2>carousel works</h2>
+<main class="carousel-container">
+  <section class="carousel-wrapper">
+    <ul class="carousel-inner" #carousel>
+      <li *ngFor="let item of [1, 2, 3, 4]" class="carousel-item">
+        <img src="https://www.shaandaarweddingz.com/wp-content/uploads/2016/05/banner-default.jpg" alt="banner image">
+      </li>
+    </ul>
+  </section>
+  <div class="btn-wrap">
+    <button (click)="next()" class="btn-left">Next</button>
+    <button (click)="preview()" class="btn-right">Preview</button>
+  </div>
+</main>

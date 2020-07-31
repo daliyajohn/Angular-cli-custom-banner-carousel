@@ -1,0 +1,31 @@
+.carousel-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 6000px;
+}
+.carousel-container .carousel-wrapper {
+  overflow: hidden;
+}
+.carousel-container .carousel-inner {
+  display: flex;
+}
+.carousel-container .carousel-inner img {
+  width: 100%;
+}
+.carousel-container .btn-wrap {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-container .btn-wrap button {
+  padding: 10px 20px 10px 20px;
+  background-color: blue;
+  border: 0;
+  color: white;
+  font-weight: 600;
+}
+.carousel-container .btn-wrap .btn-left {
+  margin-right: 15px;
+}
