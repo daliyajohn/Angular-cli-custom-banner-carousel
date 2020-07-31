@@ -2,12 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-carousel',
-  template: `
-    <p>
-      carousel works!
-    </p>
-  `,
-  styles: []
+  templateUrl: './carousel.component.html',
+  styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements OnInit {
 
