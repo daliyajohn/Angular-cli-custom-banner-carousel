@@ -1,13 +1,18 @@
-<main class="carousel-container">
-  <section class="carousel-wrapper">
-    <ul class="carousel-inner" #carousel>
-      <li *ngFor="let item of [1, 2, 3, 4]" class="carousel-item">
-        <img src="https://www.shaandaarweddingz.com/wp-content/uploads/2016/05/banner-default.jpg" alt="banner image">
-      </li>
-    </ul>
-  </section>
-  <div class="btn-wrap">
-    <button (click)="next()" class="btn-left">Next</button>
-    <button (click)="preview()" class="btn-right">Preview</button>
-  </div>
-</main>
+<div class="carousel">
+  <ng-container *ngFor="let slide of slides; let i = index">
+    <a href="{{slide?.url}}">
+      <img [src]="slide?.image" class="slide" alt="{{slide?.caption}}" @carouselAnimation *ngIf="i === currentSlide" />
+    </a>
+  </ng-container>
+  <!-- controls -->
+  <button class="control prev">
+    <span class="arrow left"></span>
+  </button>
+  <button class="control next">
+    <span class="arrow right"></span>
+  </button>
+</div>
+<div class="btn-wrap">
+  <button (click)="onPreviousClick()" class="btn-left">Next</button>
+  <button (click)="onNextClick()" class="btn-right">Preview</button>
+</div>
