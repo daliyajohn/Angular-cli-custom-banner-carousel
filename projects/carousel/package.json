@@ -4,5 +4,19 @@
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
+  },
+  "author": "daliya john <daliyajohn75@gmail.com>",
+  "keywords": [
+    "Responsive",
+    "HTML",
+    "CSS",
+    "Angular 8"
+   ],
+   "bugs": {
+    "url": "https://github.com/daliyajohn/Angular-cli-custom-banner-carousel/issues"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/daliyajohn/Angular-cli-custom-banner-carousel"
   }
 }
