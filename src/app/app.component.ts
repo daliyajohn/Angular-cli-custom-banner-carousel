@@ -26,4 +26,14 @@ export class AppComponent {
       }
     ];
   }
+
+  public carouselConfig = {
+    btn: {
+      visible: true
+    },
+    arrow: {
+      visible: true
+    } 
+  };
+
 }
