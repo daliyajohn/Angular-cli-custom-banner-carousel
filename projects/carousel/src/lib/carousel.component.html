@@ -4,15 +4,16 @@
       <img [src]="slide?.image" class="slide" alt="{{slide?.caption}}" @carouselAnimation *ngIf="i === currentSlide" />
     </a>
   </ng-container>
-  <!-- controls -->
-  <button class="control prev">
-    <span class="arrow left"></span>
-  </button>
-  <button class="control next">
-    <span class="arrow right"></span>
-  </button>
+  <ng-container *ngIf="showArrow">
+    <button class="control prev" (click)="onPreviousClick()">
+      <span class="arrow left"></span>
+    </button>
+    <button class="control next" (click)="onNextClick()">
+      <span class="arrow right"></span>
+    </button>
+  </ng-container>
 </div>
-<div class="btn-wrap">
+<div class="btn-wrap" *ngIf="showButton">
   <button (click)="onPreviousClick()" class="btn-left">Next</button>
   <button (click)="onNextClick()" class="btn-right">Preview</button>
 </div>

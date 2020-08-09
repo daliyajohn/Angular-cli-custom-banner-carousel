@@ -19,12 +19,23 @@ import { trigger, transition, animate, style } from '@angular/animations';
 })
 export class CarouselComponent implements OnInit {
   @Input() slides;
+  @Input() private config;
+
   currentSlide = 0;
+  showButton: boolean;
+  showArrow: boolean;
+  
   constructor() {
   }
 
   ngOnInit() {
     this.preloadImages();
+    this.getControls();
+  }
+
+  getControls() {
+    this.showButton = this.config.btn.visible;
+    this.showArrow = this.config.arrow.visible;
   }
 
   onPreviousClick() {
